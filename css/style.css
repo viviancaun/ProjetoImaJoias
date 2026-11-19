@@ -81,23 +81,26 @@ body {
 .hero-content {
     display: flex;
     align-items: center;
-    gap: 50px;
+    justify-content: center;
+    gap: 40px;
 }
 
-.hero-image,
-.hero-text {
-    flex: 1;
-    min-width: 0;
+.hero-image {
+    flex: 0 1 45%;
 }
 
 .hero-image img {
     width: 100%;
+    max-width: 480px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
     display: block;
     border-radius: 8px;
 }
 
 .hero-text {
-    padding: 15px;
+    flex: 0 1 50%;
 }
 
 .hero-subtitle {
