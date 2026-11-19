@@ -378,6 +378,98 @@ body {
 
 }
 
+.jewelry-care {
+    background-color: var(--color-background);
+}
+
+.care-subtitle {
+    display: block;
+    color: var(--color-text-light);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.care-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.care-card {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.care-image {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.care-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.care-text {
+    padding: 22px;
+    text-align: center;
+}
+
+.care-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--color-text-light);
+    margin-bottom: 12px;
+}
+
+.care-text p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--color-text);
+}
+
+.care-message {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--color-text-light);
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-style: italic;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .care-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .care-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .care-image {
+        height: 250px;
+    }
+
+    .care-message {
+        font-size: 17px;
+    }
+
+}
+
 @media (max-width: 480px) {
 
     .nav {
