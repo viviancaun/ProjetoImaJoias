@@ -1,0 +1,414 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-background: #FAF8F6;
+    --color-pink-light: #F2DDE0;
+    --color-pink-old: #C58D99;
+    --color-peach: #F3D5C7;
+    --color-green: #B7C4AE;
+    --color-text: #51474A;
+    --color-text-light: #A66F7D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section {
+    padding: 70px 0;
+}
+
+
+/* Header */
+
+.header {
+    background-color: var(--color-white);
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 130px;
+    display: block;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: var(--color-pink-old);
+}
+
+
+/* Main Banner */
+
+.hero {
+    background-color: var(--color-background);
+    padding: 55px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-image,
+.hero-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.hero-text {
+    padding: 15px;
+}
+
+.hero-subtitle {
+    display: block;
+    color: var(--color-text-light);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--color-text-light);
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 10px 0;
+}
+
+.hero-materials {
+    color: var(--color-text-light);
+    font-weight: 600;
+    margin-top: 20px !important;
+}
+
+.brand-slogan {
+    color: var(--color-text);
+    margin-bottom: 25px !important;
+}
+
+
+/* Responsive Banner */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 35px 0;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .hero-text {
+        padding: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero-text h1 {
+        font-size: 27px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+}
+
+/* Buttons */
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--color-pink-old);
+    color: var(--color-white);
+}
+
+.btn-primary:hover {
+    background-color: #AD7481;
+}
+
+.btn-secondary {
+    background-color: var(--color-white);
+    color: var(--color-text-light);
+    border: 1px solid var(--color-pink-old);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-pink-light);
+}
+
+
+/* Section Titles */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2,
+.brand-text h2,
+.contact h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--color-text-light);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 15px;
+}
+
+
+/* Collections */
+
+.collections {
+    background-color: var(--color-white);
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.collection-card {
+    text-align: center;
+}
+
+.collection-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.collection-card h3 {
+    margin-top: 12px;
+    font-family: 'Playfair Display', serif;
+    color: var(--color-text);
+    font-size: 20px;
+}
+
+
+/* Brand Sections */
+
+.brand-bath {
+    background-color: var(--color-pink-light);
+}
+
+.brand-history {
+    background-color: var(--color-background);
+}
+
+.brand-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.brand-image,
+.brand-text {
+    flex: 1;
+}
+
+.brand-image img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.brand-text p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* Featured Products */
+
+.products {
+    background-color: var(--color-white);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.products-button {
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+/* Contact */
+
+.contact {
+    background-color: var(--color-pink-light);
+    text-align: center;
+}
+
+.contact-content p {
+    margin: 15px 0 25px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--color-white);
+    padding: 25px 0;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero-content,
+    .brand-content {
+        flex-direction: column;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .collection-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .nav {
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 30px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 25px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title h2,
+    .brand-text h2,
+    .contact h2 {
+        font-size: 27px;
+    }
+
+}
